@@ -25,7 +25,7 @@ public class MyAppTest {
         assertEquals("Hello, John!", MyApp.greet("John"));
     }
 
-    @Test(expected = NullPointerException.class)
+    @Test(expected = IllegalArgumentException.class)
     public void testGreetWithNull() {
         MyApp.greet(null);
     }
